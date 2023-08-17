@@ -18,6 +18,7 @@ console.log( luckyNumber );
 //     give it the value of:
 //     'My name is (full name), and I think (lucky number) is a winner!'.
 let introduction = 'My name is ' + fullName + ' and I think ' + luckyNumber + ' is a winner!';
+
 //     Refer back to the videos if you need help with this one.
 //     Console log the value of `introduction`
 console.log( introduction );
@@ -52,13 +53,10 @@ console.log( allowedPets );
 // 12 - Create a variable called `result`. Create a conditional:
 //      if adventurous is true, set `result` to be "Adventures are great!", 
 //      if it's not true,  set `result` to be "How about we stay home?"
-let result;
 
-if( adventurous ) {
-  result = 'Adventures are great!';
-} else {
-  result = 'How about we stay home?';
-}
+// ternary operator
+let result = ( adventurous ) ? 'Adventures are great!' : 'How about we stay home?';
+
 //      Console log the value of `result`
 console.log( result );
 
@@ -120,11 +118,30 @@ let luckyResult
 //      Otherwise, "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
 
+switch ( luckyNumber ) {
+  case 1:
+    console.log( 'First is the worst');
+    break;
+  case 2:
+    console.log( 'Second is the best');
+    break;
+  case 3:
+    console.log( 'Third is the one with the polka dot dress');
+    break;
+  default:
+    console.log( 'Luck is what happens when preparation meets opportunity' );
+}
 
 //      console.log `luckyResult` after the conditional has run.
-console.log( luckyResult );
+// do the console logs within the switch count? Otherwise wouldn't I be double logging?
 
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
+
+
+
+
+
+
 
 
 
